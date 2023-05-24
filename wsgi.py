@@ -3,7 +3,7 @@ from flask import request, send_file, session
 from werkzeug.utils import secure_filename
 import os, uuid
 import subprocess as sbp
-app_dir = '/Users/qingyao/flask_file_process/computeAbundanceApp'
+app_dir = 'computeAbundanceApp'
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
