@@ -4,4 +4,4 @@
 test/
 user_upload/
 __pycache__
-rsc/fasta/*
+fasta/
