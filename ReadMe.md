@@ -8,9 +8,14 @@ pip install -r requirements.txt
 ## set up environment variables
 * SECRET_KEY
 * PORT
+* SSE_PORT
+* WORKERS
+* ACCESSLOG
+* ERRORLOG
 
 ## To serve
 ```
-gunicorn -w {number of workers} wsgi:app
+gunicorn wsgi:app
+gunicorn sse:app -c gunicorn.conf.sse.py
 ```
 
